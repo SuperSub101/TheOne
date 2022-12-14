@@ -41,6 +41,7 @@ public class SignupPage extends AppCompatActivity {
                 startActivity(intent);
 
 
+
             }
         });
 
