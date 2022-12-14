@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dos"
+    tools:context=".SignupPage">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:layout_marginTop="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/sgntxt"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_below="@+id/sgntxt"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginTop="25sp"
+        android:id="@+id/nameedt"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_below="@+id/nameedt"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:id="@+id/emailedt"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Number"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/emailedt"
+        android:textSize="30sp"
+        android:id="@+id/numedt"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/dobedt"
+        android:textSize="30sp"
+        android:id="@+id/gender"
+        android:textColor="@color/black"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:showDividers="beginning|middle|end"
+        android:layout_marginTop="10dp"
+        android:id="@+id/radioGroup">
+
+
+    <RadioButton
+        android:id="@+id/rb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:checked="false"
+        android:layout_below="@+id/gender"/>
+
+    <RadioButton
+        android:id="@+id/rb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:checked="false"
+        android:layout_centerHorizontal="true"/>
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender"
+        android:hint="Password"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:inputType="textPassword"
+        android:layout_marginTop="40sp"
+        android:id="@+id/passedt"
+        />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:layout_below="@+id/passedt"
+            android:id="@+id/signconfirm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15sp"
+            />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Date of birth"
+        android:inputType="date"
+        android:textSize="30sp"
+        android:id="@+id/dobedt"
+        android:layout_below="@+id/numedt"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+</RelativeLayout>
